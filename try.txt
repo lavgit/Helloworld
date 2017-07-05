@@ -1,2 +1,0 @@
-Trying github, maven
-Trying out maven, jenkins
