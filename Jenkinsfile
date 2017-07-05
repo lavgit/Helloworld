@@ -1,9 +1,10 @@
 pipeline {
-    agent { docker 'maven:3.5.0' }
+    agent { docker 'python' }
     stages {
         stage('build') {
             steps {
-                bat 'echo Hello'
+                sh 'echo Hello'
+		sh 'python --version'
             }
         }
     }
