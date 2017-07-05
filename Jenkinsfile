@@ -1,9 +1,11 @@
 pipeline {
-    agent any 
+    agent { docker 'maven:3.5.0' }
     stages {
         stage('build') {
             steps {
-                bat 'echo "Hello"'
+              
+                bat 'echo Hello'
+
             }
         }
     }
